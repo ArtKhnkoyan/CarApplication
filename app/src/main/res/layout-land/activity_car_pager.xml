@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="com.khnkoyan.carapplication.activities.CarPagerActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/carImagesContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1"
+        android:background="@color/colorForData"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCarMake"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="13sp"
+            tools:ignore="NestedWeights"/>
+
+        <TextView
+            android:id="@+id/txtCarYear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txtCarSteeringWheel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txtCarModel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txtCarTransmission"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txtCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+</LinearLayout>
